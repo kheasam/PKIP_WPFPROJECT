@@ -22,7 +22,7 @@ Partial Class Frm_Users
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel_title = New System.Windows.Forms.Panel()
         Me.title = New FontAwesome.Sharp.IconButton()
         Me.btn_Close = New FontAwesome.Sharp.IconButton()
@@ -115,14 +115,14 @@ Partial Class Frm_Users
         Me.dgv_data.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgv_data.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dgv_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Khmer OS Siemreap", 10.8!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Brown
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv_data.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Khmer OS Siemreap", 10.8!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Brown
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgv_data.DefaultCellStyle = DataGridViewCellStyle1
         Me.dgv_data.Location = New System.Drawing.Point(3, 3)
         Me.dgv_data.MultiSelect = False
         Me.dgv_data.Name = "dgv_data"
@@ -131,7 +131,7 @@ Partial Class Frm_Users
         Me.dgv_data.RowHeadersWidth = 51
         Me.dgv_data.RowTemplate.Height = 24
         Me.dgv_data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_data.Size = New System.Drawing.Size(498, 624)
+        Me.dgv_data.Size = New System.Drawing.Size(544, 624)
         Me.dgv_data.TabIndex = 0
         '
         'Panel_content
@@ -168,7 +168,7 @@ Partial Class Frm_Users
         Me.btn_delete.IconColor = System.Drawing.Color.Brown
         Me.btn_delete.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_delete.IconSize = 40
-        Me.btn_delete.Location = New System.Drawing.Point(346, 496)
+        Me.btn_delete.Location = New System.Drawing.Point(362, 509)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(151, 40)
         Me.btn_delete.TabIndex = 14
@@ -186,7 +186,7 @@ Partial Class Frm_Users
         Me.btn_edit.IconColor = System.Drawing.Color.Brown
         Me.btn_edit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_edit.IconSize = 40
-        Me.btn_edit.Location = New System.Drawing.Point(189, 496)
+        Me.btn_edit.Location = New System.Drawing.Point(205, 509)
         Me.btn_edit.Name = "btn_edit"
         Me.btn_edit.Size = New System.Drawing.Size(151, 40)
         Me.btn_edit.TabIndex = 13
@@ -204,9 +204,9 @@ Partial Class Frm_Users
         Me.btn_save.IconColor = System.Drawing.Color.Brown
         Me.btn_save.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_save.IconSize = 40
-        Me.btn_save.Location = New System.Drawing.Point(53, 496)
+        Me.btn_save.Location = New System.Drawing.Point(69, 509)
         Me.btn_save.Name = "btn_save"
-        Me.btn_save.Size = New System.Drawing.Size(151, 40)
+        Me.btn_save.Size = New System.Drawing.Size(130, 40)
         Me.btn_save.TabIndex = 12
         Me.btn_save.Text = "រក្សាទុក"
         Me.btn_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -244,7 +244,7 @@ Partial Class Frm_Users
         Me.Icon_password.IconColor = System.Drawing.Color.Brown
         Me.Icon_password.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.Icon_password.IconSize = 40
-        Me.Icon_password.Location = New System.Drawing.Point(53, 260)
+        Me.Icon_password.Location = New System.Drawing.Point(49, 260)
         Me.Icon_password.Name = "Icon_password"
         Me.Icon_password.Size = New System.Drawing.Size(40, 40)
         Me.Icon_password.TabIndex = 9
@@ -264,10 +264,11 @@ Partial Class Frm_Users
         Me.txt_password.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_password.BackColor = System.Drawing.Color.MistyRose
         Me.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_password.Font = New System.Drawing.Font("Khmer OS Siemreap", 12.8!)
         Me.txt_password.ForeColor = System.Drawing.Color.Brown
-        Me.txt_password.Location = New System.Drawing.Point(94, 262)
+        Me.txt_password.Location = New System.Drawing.Point(99, 257)
         Me.txt_password.Name = "txt_password"
-        Me.txt_password.Size = New System.Drawing.Size(430, 34)
+        Me.txt_password.Size = New System.Drawing.Size(425, 39)
         Me.txt_password.TabIndex = 7
         '
         'Icon_user
@@ -279,7 +280,7 @@ Partial Class Frm_Users
         Me.Icon_user.IconColor = System.Drawing.Color.Brown
         Me.Icon_user.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.Icon_user.IconSize = 40
-        Me.Icon_user.Location = New System.Drawing.Point(53, 152)
+        Me.Icon_user.Location = New System.Drawing.Point(48, 152)
         Me.Icon_user.Name = "Icon_user"
         Me.Icon_user.Size = New System.Drawing.Size(40, 40)
         Me.Icon_user.TabIndex = 6
@@ -299,10 +300,11 @@ Partial Class Frm_Users
         Me.txt_username.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_username.BackColor = System.Drawing.Color.MistyRose
         Me.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_username.Font = New System.Drawing.Font("Khmer OS Siemreap", 12.8!)
         Me.txt_username.ForeColor = System.Drawing.Color.Brown
-        Me.txt_username.Location = New System.Drawing.Point(94, 154)
+        Me.txt_username.Location = New System.Drawing.Point(99, 149)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(430, 34)
+        Me.txt_username.Size = New System.Drawing.Size(425, 39)
         Me.txt_username.TabIndex = 4
         '
         'Icon_id
@@ -314,7 +316,7 @@ Partial Class Frm_Users
         Me.Icon_id.IconColor = System.Drawing.Color.Brown
         Me.Icon_id.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.Icon_id.IconSize = 40
-        Me.Icon_id.Location = New System.Drawing.Point(53, 40)
+        Me.Icon_id.Location = New System.Drawing.Point(47, 40)
         Me.Icon_id.Name = "Icon_id"
         Me.Icon_id.Size = New System.Drawing.Size(40, 40)
         Me.Icon_id.TabIndex = 3
@@ -334,10 +336,11 @@ Partial Class Frm_Users
         Me.cmb_role.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmb_role.BackColor = System.Drawing.Color.MistyRose
         Me.cmb_role.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmb_role.Font = New System.Drawing.Font("Khmer OS Siemreap", 12.8!)
         Me.cmb_role.FormattingEnabled = True
-        Me.cmb_role.Location = New System.Drawing.Point(94, 380)
+        Me.cmb_role.Location = New System.Drawing.Point(99, 375)
         Me.cmb_role.Name = "cmb_role"
-        Me.cmb_role.Size = New System.Drawing.Size(429, 41)
+        Me.cmb_role.Size = New System.Drawing.Size(424, 46)
         Me.cmb_role.TabIndex = 1
         '
         'txt_id
@@ -345,10 +348,11 @@ Partial Class Frm_Users
         Me.txt_id.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txt_id.BackColor = System.Drawing.Color.MistyRose
         Me.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_id.Font = New System.Drawing.Font("Khmer OS Siemreap", 12.8!)
         Me.txt_id.ForeColor = System.Drawing.Color.Brown
-        Me.txt_id.Location = New System.Drawing.Point(94, 42)
+        Me.txt_id.Location = New System.Drawing.Point(99, 37)
         Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(430, 34)
+        Me.txt_id.Size = New System.Drawing.Size(425, 39)
         Me.txt_id.TabIndex = 0
         '
         'Frm_Users

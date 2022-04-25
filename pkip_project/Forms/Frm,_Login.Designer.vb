@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Frm__Register
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,19 @@ Partial Class Frm__Register
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Icon_user = New FontAwesome.Sharp.IconButton()
         Me.Panel_user = New System.Windows.Forms.Panel()
         Me.txt_username = New System.Windows.Forms.TextBox()
-        Me.logo = New FontAwesome.Sharp.IconPictureBox()
         Me.btn_cancel = New FontAwesome.Sharp.IconButton()
         Me.btn_login = New FontAwesome.Sharp.IconButton()
         Me.Icon_password = New FontAwesome.Sharp.IconButton()
         Me.Panel_password = New System.Windows.Forms.Panel()
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.logo = New FontAwesome.Sharp.IconPictureBox()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,22 +79,8 @@ Partial Class Frm__Register
         Me.txt_username.ForeColor = System.Drawing.Color.Brown
         Me.txt_username.Location = New System.Drawing.Point(356, 84)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(289, 37)
+        Me.txt_username.Size = New System.Drawing.Size(289, 36)
         Me.txt_username.TabIndex = 20
-        '
-        'logo
-        '
-        Me.logo.BackColor = System.Drawing.Color.MistyRose
-        Me.logo.ForeColor = System.Drawing.Color.Brown
-        Me.logo.IconChar = FontAwesome.Sharp.IconChar.Users
-        Me.logo.IconColor = System.Drawing.Color.Brown
-        Me.logo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.logo.IconSize = 200
-        Me.logo.Location = New System.Drawing.Point(25, 68)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(200, 200)
-        Me.logo.TabIndex = 23
-        Me.logo.TabStop = False
         '
         'btn_cancel
         '
@@ -159,7 +145,7 @@ Partial Class Frm__Register
         Me.txt_password.ForeColor = System.Drawing.Color.Brown
         Me.txt_password.Location = New System.Drawing.Point(356, 172)
         Me.txt_password.Name = "txt_password"
-        Me.txt_password.Size = New System.Drawing.Size(288, 37)
+        Me.txt_password.Size = New System.Drawing.Size(288, 36)
         Me.txt_password.TabIndex = 26
         '
         'Panel1
@@ -168,6 +154,22 @@ Partial Class Frm__Register
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(3, 383)
         Me.Panel1.TabIndex = 29
+        '
+        'logo
+        '
+        Me.logo.BackColor = System.Drawing.Color.MistyRose
+        Me.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.logo.ForeColor = System.Drawing.Color.Brown
+        Me.logo.IconChar = FontAwesome.Sharp.IconChar.Users
+        Me.logo.IconColor = System.Drawing.Color.Brown
+        Me.logo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.logo.IconSize = 200
+        Me.logo.Location = New System.Drawing.Point(36, 84)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(200, 200)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.logo.TabIndex = 23
+        Me.logo.TabStop = False
         '
         'Frm__Register
         '
@@ -201,11 +203,11 @@ Partial Class Frm__Register
     Friend WithEvents Icon_user As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel_user As Panel
     Friend WithEvents txt_username As TextBox
-    Friend WithEvents logo As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents btn_cancel As FontAwesome.Sharp.IconButton
     Friend WithEvents btn_login As FontAwesome.Sharp.IconButton
     Friend WithEvents Icon_password As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel_password As Panel
     Friend WithEvents txt_password As TextBox
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents logo As FontAwesome.Sharp.IconPictureBox
 End Class

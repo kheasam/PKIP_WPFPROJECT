@@ -29,6 +29,7 @@ Partial Class Frm_Dashboard
         Me.btn_restore = New FontAwesome.Sharp.IconButton()
         Me.btn_close = New FontAwesome.Sharp.IconButton()
         Me.Panel_Menu = New System.Windows.Forms.Panel()
+        Me.btn_User = New FontAwesome.Sharp.IconButton()
         Me.logo = New FontAwesome.Sharp.IconPictureBox()
         Me.btn_logout = New FontAwesome.Sharp.IconButton()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
@@ -44,7 +45,6 @@ Partial Class Frm_Dashboard
         Me.Panel_Content = New System.Windows.Forms.Panel()
         Me.Timer_Show = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_Hide = New System.Windows.Forms.Timer(Me.components)
-        Me.btn_User = New FontAwesome.Sharp.IconButton()
         Me.Panel_Title.SuspendLayout()
         Me.Panel_Menu.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -146,6 +146,25 @@ Partial Class Frm_Dashboard
         Me.Panel_Menu.Size = New System.Drawing.Size(300, 665)
         Me.Panel_Menu.TabIndex = 1
         '
+        'btn_User
+        '
+        Me.btn_User.FlatAppearance.BorderSize = 0
+        Me.btn_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_User.Font = New System.Drawing.Font("Khmer OS Siemreap", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_User.ForeColor = System.Drawing.Color.Brown
+        Me.btn_User.IconChar = FontAwesome.Sharp.IconChar.UserCog
+        Me.btn_User.IconColor = System.Drawing.Color.Brown
+        Me.btn_User.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_User.IconSize = 40
+        Me.btn_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_User.Location = New System.Drawing.Point(-3, 393)
+        Me.btn_User.Name = "btn_User"
+        Me.btn_User.Size = New System.Drawing.Size(288, 46)
+        Me.btn_User.TabIndex = 17
+        Me.btn_User.Text = "គណនីប្រើប្រាស់"
+        Me.btn_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_User.UseVisualStyleBackColor = True
+        '
         'logo
         '
         Me.logo.BackColor = System.Drawing.Color.LightSkyBlue
@@ -157,6 +176,7 @@ Partial Class Frm_Dashboard
         Me.logo.Location = New System.Drawing.Point(64, 71)
         Me.logo.Name = "logo"
         Me.logo.Size = New System.Drawing.Size(150, 150)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.logo.TabIndex = 16
         Me.logo.TabStop = False
         '
@@ -190,9 +210,9 @@ Partial Class Frm_Dashboard
         Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.IconButton2.IconSize = 40
         Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.Location = New System.Drawing.Point(-5, 452)
+        Me.IconButton2.Location = New System.Drawing.Point(-5, 445)
         Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(294, 35)
+        Me.IconButton2.Size = New System.Drawing.Size(294, 42)
         Me.IconButton2.TabIndex = 14
         Me.IconButton2.Text = "ការកំណត់"
         Me.IconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -352,25 +372,6 @@ Partial Class Frm_Dashboard
         '
         'Timer_Hide
         '
-        '
-        'btn_User
-        '
-        Me.btn_User.FlatAppearance.BorderSize = 0
-        Me.btn_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_User.Font = New System.Drawing.Font("Khmer OS Siemreap", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_User.ForeColor = System.Drawing.Color.Brown
-        Me.btn_User.IconChar = FontAwesome.Sharp.IconChar.UserCog
-        Me.btn_User.IconColor = System.Drawing.Color.Brown
-        Me.btn_User.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_User.IconSize = 40
-        Me.btn_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_User.Location = New System.Drawing.Point(-6, 410)
-        Me.btn_User.Name = "btn_User"
-        Me.btn_User.Size = New System.Drawing.Size(294, 35)
-        Me.btn_User.TabIndex = 17
-        Me.btn_User.Text = "គណនីប្រើប្រាស់"
-        Me.btn_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_User.UseVisualStyleBackColor = True
         '
         'Frm_Dashboard
         '

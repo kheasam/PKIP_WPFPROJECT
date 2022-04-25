@@ -1,5 +1,16 @@
-﻿Public Class Frm_Dashboard
+﻿Imports System.Runtime.InteropServices
 
+Public Class Frm_Dashboard
+    Private sql As New MySQLControls()
+
+
+    'make form header moving 
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Public Shared Sub ReleaseCapture()
+    End Sub
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Public Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
+    End Sub
 
     Sub abri_Form(ByVal FormAbri As Object)
         If Panel_Content.Controls.Count > 0 Then
@@ -64,5 +75,36 @@
 
     Private Sub btn_User_Click(sender As Object, e As EventArgs) Handles btn_User.Click
         Call abri_Form(New Frm_Users)
+    End Sub
+
+
+
+    Private Sub Panel_Title_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_Title.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+        btn_maximize.Visible = True
+        btn_restore.Visible = False
+    End Sub
+
+    Private Sub youtube_Click(sender As Object, e As EventArgs) Handles youtube.Click
+        Dim url As New ProcessStartInfo("https://www.youtube.com/channel/UCm4NthZlVLidSFt1ramRiWg")
+        Try
+            Process.Start(url)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub telegrame_Click(sender As Object, e As EventArgs) Handles telegrame.Click
+        Dim url As New ProcessStartInfo("https://t.me/gurutechi")
+        Try
+            Process.Start(url)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Frm_Dashboard_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Sql.logos(logo, "select logo from infos")
     End Sub
 End Class
