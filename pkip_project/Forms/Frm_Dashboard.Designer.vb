@@ -359,9 +359,7 @@ Partial Class Frm_Dashboard
         '
         'Panel_Content
         '
-        Me.Panel_Content.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel_Content.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Content.Location = New System.Drawing.Point(300, 35)
         Me.Panel_Content.Name = "Panel_Content"
         Me.Panel_Content.Size = New System.Drawing.Size(1100, 665)

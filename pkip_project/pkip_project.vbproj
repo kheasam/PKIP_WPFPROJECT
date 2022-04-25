@@ -90,10 +90,10 @@
     <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Frm,_Login.Designer.vb">
-      <DependentUpon>Frm,_Login.vb</DependentUpon>
+    <Compile Include="Forms\Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Frm,_Login.vb">
+    <Compile Include="Forms\Frm_Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Frm_Dashboard.Designer.vb">
@@ -137,8 +137,8 @@
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Frm,_Login.resx">
-      <DependentUpon>Frm,_Login.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Dashboard.resx">
       <DependentUpon>Frm_Dashboard.vb</DependentUpon>

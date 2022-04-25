@@ -8,7 +8,10 @@
     End Sub
 
     Private Sub Frm_Info_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        sql.SetCueText(txt_id, "បញ្ចូលលេខសម្គាល់")
+        sql.SetCueText(txt_namkh, "បញ្ជូលឈ្មោះទីតាំង")
+        sql.SetCueText(txt_nameen, "ជាឡាតាំង")
+        sql.SetCueText(txt_address, "បញ្ចូលអាសយដ្ឋាន")
 
     End Sub
 
