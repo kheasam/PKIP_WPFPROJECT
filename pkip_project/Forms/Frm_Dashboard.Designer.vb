@@ -29,6 +29,7 @@ Partial Class Frm_Dashboard
         Me.btn_restore = New FontAwesome.Sharp.IconButton()
         Me.btn_close = New FontAwesome.Sharp.IconButton()
         Me.Panel_Menu = New System.Windows.Forms.Panel()
+        Me.Btn_Register = New FontAwesome.Sharp.IconButton()
         Me.btn_User = New FontAwesome.Sharp.IconButton()
         Me.logo = New FontAwesome.Sharp.IconPictureBox()
         Me.btn_logout = New FontAwesome.Sharp.IconButton()
@@ -42,9 +43,9 @@ Partial Class Frm_Dashboard
         Me.youtube = New FontAwesome.Sharp.IconButton()
         Me.messager = New FontAwesome.Sharp.IconButton()
         Me.facebook = New FontAwesome.Sharp.IconButton()
-        Me.Panel_Content = New System.Windows.Forms.Panel()
         Me.Timer_Show = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_Hide = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel_Content = New System.Windows.Forms.Panel()
         Me.Panel_Title.SuspendLayout()
         Me.Panel_Menu.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,6 +128,7 @@ Partial Class Frm_Dashboard
         'Panel_Menu
         '
         Me.Panel_Menu.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Panel_Menu.Controls.Add(Me.Btn_Register)
         Me.Panel_Menu.Controls.Add(Me.btn_User)
         Me.Panel_Menu.Controls.Add(Me.logo)
         Me.Panel_Menu.Controls.Add(Me.btn_logout)
@@ -145,6 +147,25 @@ Partial Class Frm_Dashboard
         Me.Panel_Menu.Name = "Panel_Menu"
         Me.Panel_Menu.Size = New System.Drawing.Size(300, 665)
         Me.Panel_Menu.TabIndex = 1
+        '
+        'Btn_Register
+        '
+        Me.Btn_Register.FlatAppearance.BorderSize = 0
+        Me.Btn_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Register.Font = New System.Drawing.Font("Khmer OS Siemreap", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Register.ForeColor = System.Drawing.Color.Brown
+        Me.Btn_Register.IconChar = FontAwesome.Sharp.IconChar.UserCog
+        Me.Btn_Register.IconColor = System.Drawing.Color.Brown
+        Me.Btn_Register.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Btn_Register.IconSize = 40
+        Me.Btn_Register.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Btn_Register.Location = New System.Drawing.Point(1, 309)
+        Me.Btn_Register.Name = "Btn_Register"
+        Me.Btn_Register.Size = New System.Drawing.Size(288, 46)
+        Me.Btn_Register.TabIndex = 18
+        Me.Btn_Register.Text = "ចុះឈ្មោះនិស្សិត"
+        Me.Btn_Register.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Btn_Register.UseVisualStyleBackColor = True
         '
         'btn_User
         '
@@ -357,6 +378,12 @@ Partial Class Frm_Dashboard
         Me.facebook.TabIndex = 5
         Me.facebook.UseVisualStyleBackColor = True
         '
+        'Timer_Show
+        '
+        '
+        'Timer_Hide
+        '
+        '
         'Panel_Content
         '
         Me.Panel_Content.Dock = System.Windows.Forms.DockStyle.Fill
@@ -364,12 +391,6 @@ Partial Class Frm_Dashboard
         Me.Panel_Content.Name = "Panel_Content"
         Me.Panel_Content.Size = New System.Drawing.Size(1100, 665)
         Me.Panel_Content.TabIndex = 2
-        '
-        'Timer_Show
-        '
-        '
-        'Timer_Hide
-        '
         '
         'Frm_Dashboard
         '
@@ -394,7 +415,6 @@ Partial Class Frm_Dashboard
 
     Friend WithEvents Panel_Title As Panel
     Friend WithEvents Panel_Menu As Panel
-    Friend WithEvents Panel_Content As Panel
     Friend WithEvents btn_maximize As FontAwesome.Sharp.IconButton
     Friend WithEvents bnt_minimize As FontAwesome.Sharp.IconButton
     Friend WithEvents btn_restore As FontAwesome.Sharp.IconButton
@@ -414,4 +434,6 @@ Partial Class Frm_Dashboard
     Friend WithEvents Timer_Show As Timer
     Friend WithEvents Timer_Hide As Timer
     Friend WithEvents btn_User As FontAwesome.Sharp.IconButton
+    Friend WithEvents Btn_Register As FontAwesome.Sharp.IconButton
+    Friend WithEvents Panel_Content As Panel
 End Class
