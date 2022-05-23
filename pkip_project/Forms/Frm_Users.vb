@@ -78,4 +78,9 @@ Public Class Frm_Users
     Private Sub Panel_content_Paint(sender As Object, e As PaintEventArgs) Handles Panel_content.Paint
 
     End Sub
+
+    Private Sub btn_Close_Click(sender As Object, e As EventArgs) Handles btn_Close.Click
+        Me.Close()
+
+    End Sub
 End Class

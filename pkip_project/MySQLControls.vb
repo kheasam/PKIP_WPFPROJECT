@@ -1,8 +1,13 @@
 ﻿Imports System.IO
 Imports System.Runtime.InteropServices
 Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms
+Imports CrystalDecisions.CrystalReports
+Imports CrystalDecisions.Shared
+
 Public Class MySQLControls
     Inherits MySQLConnects
+
 
 #Region "Placehoder"
     <DllImport("user32.dll", CharSet:=CharSet.Auto)>
@@ -136,4 +141,50 @@ Public Class MySQLControls
             End Using
         End Using
     End Sub
+
+    Sub login(user As TextBox, pws As TextBox, cmb As ComboBox)
+        Dim log As String
+        Using cn = GetConnection()
+            cn.Open()
+            Using cmd = New MySqlCommand("select username,password,role from users where username ='" & user.Text & "' and password ='" & pws.Text & "' and role ='" & cmb.SelectedValue & "'", cn)
+                cmd.Connection = cn
+                log = cmd.ExecuteScalar()
+                If log = Nothing Then
+                    MessageBox.Show("Invalid Username Or Password")
+                Else
+                    If cmb.Text = "administrators" Then
+                        MessageBox.Show("Dashboard")
+                        Frm_Dashboard.Show()
+
+                    Else
+                        MessageBox.Show("User")
+                        Frm_Users.Show()
+                    End If
+                End If
+            End Using
+
+        End Using
+    End Sub
+    Sub crReport(crreport As Object)
+        ' Dim cn As New MySqlConnection
+        'Dim cmd As New MySqlCommand
+        'Dim da As New MySqlDataAdapter
+        Dim ds As New DataSet_Data
+        Dim rpt As New Cr_Registration
+
+        Using cn = GetConnection()
+            cn.Open()
+            cmd.Connection = cn
+            cmd.CommandText = "select * from v_register"
+            cmd.CommandType = CommandType.Text
+            da.SelectCommand = cmd
+
+            da.SelectCommand = cmd
+            da.Fill(ds, "v_register")
+
+            rpt.SetDataSource(ds)
+            crreport.ReportSource = rpt
+        End Using
+    End Sub
+
 End Class

@@ -22,7 +22,7 @@ Partial Class Frm__Register
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.Btn_Exit = New FontAwesome.Sharp.IconButton()
         Me.Icon_user = New FontAwesome.Sharp.IconButton()
         Me.Panel_user = New System.Windows.Forms.Panel()
         Me.txt_username = New System.Windows.Forms.TextBox()
@@ -33,22 +33,26 @@ Partial Class Frm__Register
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.logo = New FontAwesome.Sharp.IconPictureBox()
+        Me.Icon_role = New FontAwesome.Sharp.IconButton()
+        Me.Panel_role = New System.Windows.Forms.Panel()
+        Me.cmb_role = New System.Windows.Forms.ComboBox()
+        Me.Btn_Setting = New FontAwesome.Sharp.IconButton()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'IconButton1
+        'Btn_Exit
         '
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowClose
-        Me.IconButton1.IconColor = System.Drawing.Color.Brown
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 35
-        Me.IconButton1.Location = New System.Drawing.Point(658, 4)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(35, 35)
-        Me.IconButton1.TabIndex = 16
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.Btn_Exit.FlatAppearance.BorderSize = 0
+        Me.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Exit.IconChar = FontAwesome.Sharp.IconChar.WindowClose
+        Me.Btn_Exit.IconColor = System.Drawing.Color.Brown
+        Me.Btn_Exit.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Btn_Exit.IconSize = 35
+        Me.Btn_Exit.Location = New System.Drawing.Point(658, 4)
+        Me.Btn_Exit.Name = "Btn_Exit"
+        Me.Btn_Exit.Size = New System.Drawing.Size(35, 35)
+        Me.Btn_Exit.TabIndex = 16
+        Me.Btn_Exit.UseVisualStyleBackColor = True
         '
         'Icon_user
         '
@@ -58,7 +62,7 @@ Partial Class Frm__Register
         Me.Icon_user.IconColor = System.Drawing.Color.Brown
         Me.Icon_user.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.Icon_user.IconSize = 40
-        Me.Icon_user.Location = New System.Drawing.Point(315, 82)
+        Me.Icon_user.Location = New System.Drawing.Point(315, 38)
         Me.Icon_user.Name = "Icon_user"
         Me.Icon_user.Size = New System.Drawing.Size(40, 40)
         Me.Icon_user.TabIndex = 22
@@ -67,7 +71,7 @@ Partial Class Frm__Register
         'Panel_user
         '
         Me.Panel_user.BackColor = System.Drawing.Color.Brown
-        Me.Panel_user.Location = New System.Drawing.Point(315, 123)
+        Me.Panel_user.Location = New System.Drawing.Point(315, 79)
         Me.Panel_user.Name = "Panel_user"
         Me.Panel_user.Size = New System.Drawing.Size(329, 3)
         Me.Panel_user.TabIndex = 21
@@ -77,7 +81,7 @@ Partial Class Frm__Register
         Me.txt_username.BackColor = System.Drawing.Color.MistyRose
         Me.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txt_username.ForeColor = System.Drawing.Color.Brown
-        Me.txt_username.Location = New System.Drawing.Point(356, 84)
+        Me.txt_username.Location = New System.Drawing.Point(356, 40)
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(289, 36)
         Me.txt_username.TabIndex = 20
@@ -91,7 +95,7 @@ Partial Class Frm__Register
         Me.btn_cancel.IconColor = System.Drawing.Color.Brown
         Me.btn_cancel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_cancel.IconSize = 40
-        Me.btn_cancel.Location = New System.Drawing.Point(458, 280)
+        Me.btn_cancel.Location = New System.Drawing.Point(492, 330)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(151, 40)
         Me.btn_cancel.TabIndex = 25
@@ -108,7 +112,7 @@ Partial Class Frm__Register
         Me.btn_login.IconColor = System.Drawing.Color.Brown
         Me.btn_login.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_login.IconSize = 40
-        Me.btn_login.Location = New System.Drawing.Point(322, 280)
+        Me.btn_login.Location = New System.Drawing.Point(328, 330)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(151, 40)
         Me.btn_login.TabIndex = 24
@@ -124,7 +128,7 @@ Partial Class Frm__Register
         Me.Icon_password.IconColor = System.Drawing.Color.Brown
         Me.Icon_password.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.Icon_password.IconSize = 40
-        Me.Icon_password.Location = New System.Drawing.Point(315, 170)
+        Me.Icon_password.Location = New System.Drawing.Point(315, 126)
         Me.Icon_password.Name = "Icon_password"
         Me.Icon_password.Size = New System.Drawing.Size(40, 40)
         Me.Icon_password.TabIndex = 28
@@ -133,7 +137,7 @@ Partial Class Frm__Register
         'Panel_password
         '
         Me.Panel_password.BackColor = System.Drawing.Color.Brown
-        Me.Panel_password.Location = New System.Drawing.Point(315, 211)
+        Me.Panel_password.Location = New System.Drawing.Point(315, 167)
         Me.Panel_password.Name = "Panel_password"
         Me.Panel_password.Size = New System.Drawing.Size(328, 3)
         Me.Panel_password.TabIndex = 27
@@ -143,7 +147,7 @@ Partial Class Frm__Register
         Me.txt_password.BackColor = System.Drawing.Color.MistyRose
         Me.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txt_password.ForeColor = System.Drawing.Color.Brown
-        Me.txt_password.Location = New System.Drawing.Point(356, 172)
+        Me.txt_password.Location = New System.Drawing.Point(356, 128)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.Size = New System.Drawing.Size(288, 36)
         Me.txt_password.TabIndex = 26
@@ -171,12 +175,65 @@ Partial Class Frm__Register
         Me.logo.TabIndex = 23
         Me.logo.TabStop = False
         '
+        'Icon_role
+        '
+        Me.Icon_role.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Icon_role.FlatAppearance.BorderSize = 0
+        Me.Icon_role.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Icon_role.IconChar = FontAwesome.Sharp.IconChar.UserShield
+        Me.Icon_role.IconColor = System.Drawing.Color.Brown
+        Me.Icon_role.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Icon_role.Location = New System.Drawing.Point(310, 234)
+        Me.Icon_role.Name = "Icon_role"
+        Me.Icon_role.Size = New System.Drawing.Size(40, 40)
+        Me.Icon_role.TabIndex = 32
+        Me.Icon_role.UseVisualStyleBackColor = True
+        '
+        'Panel_role
+        '
+        Me.Panel_role.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel_role.BackColor = System.Drawing.Color.Brown
+        Me.Panel_role.Location = New System.Drawing.Point(310, 275)
+        Me.Panel_role.Name = "Panel_role"
+        Me.Panel_role.Size = New System.Drawing.Size(335, 3)
+        Me.Panel_role.TabIndex = 31
+        '
+        'cmb_role
+        '
+        Me.cmb_role.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmb_role.BackColor = System.Drawing.Color.MistyRose
+        Me.cmb_role.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmb_role.Font = New System.Drawing.Font("Khmer OS Siemreap", 12.8!)
+        Me.cmb_role.FormattingEnabled = True
+        Me.cmb_role.Location = New System.Drawing.Point(356, 229)
+        Me.cmb_role.Name = "cmb_role"
+        Me.cmb_role.Size = New System.Drawing.Size(289, 46)
+        Me.cmb_role.TabIndex = 30
+        '
+        'Btn_Setting
+        '
+        Me.Btn_Setting.FlatAppearance.BorderSize = 0
+        Me.Btn_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_Setting.IconChar = FontAwesome.Sharp.IconChar.Cog
+        Me.Btn_Setting.IconColor = System.Drawing.Color.Brown
+        Me.Btn_Setting.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.Btn_Setting.IconSize = 35
+        Me.Btn_Setting.Location = New System.Drawing.Point(3, 4)
+        Me.Btn_Setting.Name = "Btn_Setting"
+        Me.Btn_Setting.Size = New System.Drawing.Size(35, 35)
+        Me.Btn_Setting.TabIndex = 33
+        Me.Btn_Setting.UseVisualStyleBackColor = True
+        '
         'Frm__Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(15.0!, 36.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MistyRose
         Me.ClientSize = New System.Drawing.Size(700, 400)
+        Me.Controls.Add(Me.Btn_Setting)
+        Me.Controls.Add(Me.Icon_role)
+        Me.Controls.Add(Me.Panel_role)
+        Me.Controls.Add(Me.cmb_role)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Icon_password)
         Me.Controls.Add(Me.Panel_password)
@@ -187,7 +244,7 @@ Partial Class Frm__Register
         Me.Controls.Add(Me.Icon_user)
         Me.Controls.Add(Me.Panel_user)
         Me.Controls.Add(Me.txt_username)
-        Me.Controls.Add(Me.IconButton1)
+        Me.Controls.Add(Me.Btn_Exit)
         Me.Font = New System.Drawing.Font("Khmer OS Siemreap", 11.8!)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(6, 7, 6, 7)
@@ -199,7 +256,7 @@ Partial Class Frm__Register
 
     End Sub
 
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents Btn_Exit As FontAwesome.Sharp.IconButton
     Friend WithEvents Icon_user As FontAwesome.Sharp.IconButton
     Friend WithEvents Panel_user As Panel
     Friend WithEvents txt_username As TextBox
@@ -210,4 +267,8 @@ Partial Class Frm__Register
     Friend WithEvents txt_password As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents logo As FontAwesome.Sharp.IconPictureBox
+    Friend WithEvents Icon_role As FontAwesome.Sharp.IconButton
+    Friend WithEvents Panel_role As Panel
+    Friend WithEvents cmb_role As ComboBox
+    Friend WithEvents Btn_Setting As FontAwesome.Sharp.IconButton
 End Class
