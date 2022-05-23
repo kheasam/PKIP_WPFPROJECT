@@ -7,10 +7,10 @@ Public MustInherit Class MySQLConnects
     Public cs As String
 
     'Declare All Variable
-    Public da As MySqlDataAdapter
+    Public da As New MySqlDataAdapter
     Public dr As MySqlDataReader
-    Public cmd As MySqlCommand
-    Public cn As MySqlConnection
+    Public cmd As New MySqlCommand
+    Public cn As New MySqlConnection
     Public dt As DataTable
     Public ds As DataSet
 

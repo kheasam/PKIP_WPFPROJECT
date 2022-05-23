@@ -2,6 +2,9 @@
 Imports System.Runtime.InteropServices
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms
+Imports CrystalDecisions.CrystalReports
+Imports CrystalDecisions.Shared
+
 Public Class MySQLControls
     Inherits MySQLConnects
 
@@ -162,4 +165,26 @@ Public Class MySQLControls
 
         End Using
     End Sub
+    Sub crReport(crreport As Object)
+        ' Dim cn As New MySqlConnection
+        'Dim cmd As New MySqlCommand
+        'Dim da As New MySqlDataAdapter
+        Dim ds As New DataSet_Data
+        Dim rpt As New Cr_Registration
+
+        Using cn = GetConnection()
+            cn.Open()
+            cmd.Connection = cn
+            cmd.CommandText = "select * from v_register"
+            cmd.CommandType = CommandType.Text
+            da.SelectCommand = cmd
+
+            da.SelectCommand = cmd
+            da.Fill(ds, "v_register")
+
+            rpt.SetDataSource(ds)
+            crreport.ReportSource = rpt
+        End Using
+    End Sub
+
 End Class

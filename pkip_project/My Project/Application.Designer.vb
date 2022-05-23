@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.pkip_project.Frm__Register
+            Me.MainForm = Global.pkip_project.Frm_RPTRegister
         End Sub
     End Class
 End Namespace
